@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<style>
+div{width:80px;
+height:40px;
+background-color:#9C0;
+padding:10px;
+margin:10px;}
+</style>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div id="wrap1">我是wrap1</div>
+<div id="wrap2">我是wrap2</div>
+<script>
+var oWrap1=document.getElementById("wrap1"),
+    oWrap2=document.getElementById("wrap2");
+	
+	oWrap1.onmouseenter=function(){
+		oWrap2.innerHTML="鼠标移入了 wrap1";}
+		
+		oWrap1.onmouseleave=function(){
+		oWrap2.innerHTML="鼠标离开了 wrap1";}
+		
+		oWrap2.onmouseenter=function(){
+		oWrap1.innerHTML="鼠标移入了 wrap2";}
+		
+		oWrap2.onmouseleave=function(){
+		oWrap1.innerHTML="鼠标离开了 wrap2";}
+</script>
+</body>
+</html>
